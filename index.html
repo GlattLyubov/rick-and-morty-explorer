@@ -1,58 +1,48 @@
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Rick and Morty Explorer</title>
 
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1>Rick and Morty Explorer</h1>
-        <p>Explore os personagens do universo Rick and Morty!</p>
+      <h1>Rick and Morty Explorer</h1>
+      <p>Explore os personagens do universo Rick and Morty!</p>
     </header>
 
     <main>
+      <section class="introducao">
+        <h2>Bem-vindo ao universo Rick and Morty!</h2>
 
-        <section class="introducao">
-            <h2>Bem-vindo ao universo Rick and Morty!</h2>
+        <p>
+          Conheça alguns dos personagens mais conhecidos dessa incrível série de
+          animação.
+        </p>
+      </section>
 
-            <p>
-                Conheça alguns dos personagens mais conhecidos
-                dessa incrível série de animação.
-            </p>
-        </section>
+      <section class="personagens">
+        <h2>Personagens</h2>
 
-        <section class="personagens">
+        <div id="lista-personagens">
+          <!-- Os cards serão criados pelo JavaScript -->
+        </div>
 
-            <h2>Personagens</h2>
+        <p id="mensagem"></p>
 
-            <div id="lista-personagens">
-                <!-- Os cards serão criados pelo JavaScript -->
-            </div>
-
-            <p id="mensagem"></p>
-
-            <button id="carregar-mais">Carregar mais personagens</button>
-
-        </section>
-
+        <button id="carregar-mais">Carregar mais personagens</button>
+      </section>
     </main>
 
     <footer>
-        <p>Projeto acadêmico - Desenvolvimento Web</p>
-        <p>Dados fornecidos pela Rick and Morty API</p>
+      <p>Projeto acadêmico - Desenvolvimento Web</p>
+      <p>Dados fornecidos pela Rick and Morty API</p>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
